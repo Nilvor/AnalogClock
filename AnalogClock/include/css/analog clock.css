@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: x_factor;
+    background-color: #1c3049;
+    color: white;
+
+}
+
+.box{
+    width: 80vw;
+    height:80vh;
+    margin: 4% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.box h1{
+    color: white;
+}
+.clock{
+    z-index: 0;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    /*border: blue 2px solid;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("../pic/gk0o5O.jpg");
+}
+#dor{
+    position: absolute;
+    background-color: #801111;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    z-index: -4;
+}
+
+.hour, .min, .sec{
+    position: absolute;
+    height: 15vh;
+    background: black;
+    transform: rotate(0deg);
+    transform-origin: bottom center;
+    margin: auto;
+    top: -15vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.hour{
+    width: 8px;
+    border-radius: 50%;
+}
+
+.min{
+    background: red;
+    height: 19vh;
+    border-radius: 50%;
+    width: 5px;
+    z-index: -1;
+    top: -19vh;
+}
+.sec{
+    background: #801111;
+    height: 22vh;
+    width: 1px;
+    z-index: -2;
+    top: -22vh;
+}
+.dot{
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+}
+
+.numbers{
+    color: #801111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: x_factor;
+}
+#num12{
+   position: absolute;
+    top: 3%;
+}
+#num3{
+    position: absolute;
+    right: 3%;
+}
+#num6{
+    position: absolute;
+    bottom: 3%;
+}
+#num9{
+    position: absolute;
+    left: 3%;
+
+}
